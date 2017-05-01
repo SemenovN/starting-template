@@ -1,0 +1,214 @@
+.form-order {
+	background-color: #f4f4f4;
+	text-align: center;
+}
+
+.form-order__info {
+margin-top: 30px;
+}
+.form__wrap {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 40px;
+}
+.form__inner {
+	@include row-flex();
+	justify-content: center;
+	text-align: left;
+}
+.form__side--right, .form__side--left {
+	@include col();
+	@include col-12();
+	@include col-sm-24();
+}
+/*.form__input,
+.form__textarea {
+  padding: 5px;
+  margin: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #E2E2E2;
+  font-size: 20px;
+  :hover {
+    border: 1px solid #000;
+  }
+}*/
+.dropcontainer {
+	position:relative;
+	font-size: 16px;
+	color: #777;
+	} 
+
+.trigger,
+.form__input,
+.form__textarea {
+	background-color: #fff;
+	color: #777;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 4px;
+	//background: #fff url(../images/select-arrow-open.png) 98% center no-repeat;
+	display: block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	transition: all 0.5s ease;
+	width: 100%;
+	margin-bottom: 12px;
+	}
+.form__textarea {
+	min-height: 200px;
+}
+.trigger:hover {
+	color: #777;
+	background-color: #fff;
+	margin-bottom: 12px;
+	//background: #f5f5f5 url(../images/select-arrow-open.png) 98% center no-repeat;
+	}
+
+.activetrigger {
+	background-color: #fff;
+	color: #777;
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 12px;
+	border-radius: 4px;
+	//background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
+	display: block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	}
+
+.activetrigger:hover {
+	//background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
+	color: #777;
+	background-color: #fff;
+	}
+
+.activetrigger:active {
+	//background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
+	color: #777;
+	background-color: #fff;
+	}
+
+.dropcontainer ul {
+	font-size: 16px;
+	border: 1px solid #ccc;
+  position: absolute;
+  background: #fff;
+  list-style-type: none;
+  padding: 10px;
+  top: -8px;
+  right: 0;
+  left: 0;
+  height: 178px;
+  z-index: 100;
+  border-radius: 5px;
+  box-sizing: border-box; 
+	}
+
+.dropcontainer ul li {
+	padding: 5px;
+	transition: all 0.5s ease;
+	}
+
+.dropcontainer ul li:hover {
+	background: #f5f5f5;
+	outline: none;
+	}
+
+.dropcontainer ul li:first-child {
+	display: none;
+	}
+
+.dropcontainer ul li:last-child {
+	border-bottom: none;
+	}
+
+.dropdownhidden {
+	display: none;
+	}
+
+.dropdownvisible {
+	height: auto;
+	}
+
+.dropdownvisible {
+	height: 200px;
+	overflow-y: scroll;
+	}
+.form__input,
+.form__textarea {
+	&:focus {
+		outline: 0;
+	}
+}
+
+.budget__list {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	label {
+		&:before{
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 100px;
+    	top: -12px;
+    	left: 61px;
+			background-color: #e2e2e2;
+		}
+	}
+}
+
+.budget__item {
+	float: left;
+	min-width: 100px;
+}
+label {
+	position: relative;
+	display: block;
+}
+/*.budget__item--betweem {
+	label {
+		&:before{
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 98px;
+			top: -11px;
+			left: 56px;
+			background-color: #e2e2e2;
+		}
+	}
+}*/
+/* FILE-UPLOAD STYLE BEGIN*/
+.file-upload {
+     position: relative;
+     overflow: hidden; 
+     width: 50%; 
+     height: 20px; 
+     background: transparient;
+     border-radius: 3px;
+     padding: 8px 4px;
+     color: #3b4555;
+     text-align: center;
+}
+.file-upload:hover {
+     background: transparient;
+}
+.file-upload input[type="file"]{
+    display: none;
+}
+.file-upload label {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+}
+.file-upload span {
+     line-height: 36px;
+}

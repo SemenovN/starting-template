@@ -1,0 +1,20 @@
+doctype html
+html
+	include ./includes/head.pug
+	body
+		include ./includes/header.pug
+		main.content-page
+		<!--SERVICES LIST-->
+		div.services-navigation
+			ul.services__list
+				li.services__item
+					a(class="sirvices__link--active" href="dev-mobile-app.html") Разработка мобильных приложений
+				li.services__item
+					a(class="sirvices__link" href="uslugi-sozdanie-websaitov.html") Создание веб-сайтов
+				li.services__item
+					a(class="sirvices__link" href="uslugi-prodvizhenie-mobilnyih-prilozheniy.html") Продвижение мобильных приложений</a>
+		<!--//SERVICES LIST-->
+			section
+			section.form-order
+				include ./includes/form-order.pug
+		include ./includes/footer.pug

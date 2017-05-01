@@ -1,1 +1,93 @@
 @import "../modules/all";
+body {
+  font-family: Rubik, Arial, Helvetica Neue, Helvetica, sans-serif;
+  min-width: 320px;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  //display: flex;
+  //flex-flow: column;
+  //min-height: 100vh;
+ }
+ a {
+ 	text-decoration: none;
+ }
+ li {
+ 	list-style-type: none;
+ }
+p, ul, li, a, h1, h2, h3 {
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+.divider {
+  min-height: 34px;
+  background-color: #F4F4F4;
+}
+
+.content-page {
+	//flex: 1;
+}
+
+.content-page__inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.section-heading {
+	color: #3B4555;
+  text-align: center;
+  position: relative;
+  padding: 12px 0;
+  display: inline-block;;
+  font-size: 32px;
+  line-height: 38px;
+  min-width: 360px;
+  @include screen320 {
+    min-width: 320px;
+  }
+}
+
+.section-heading span {
+  font-weight: 500;
+}
+.section-heading:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    width: 100%;
+    margin-left: -50%;
+    height: 2px;
+    background: linear-gradient(to right, #ffffff 0%,#e3e3e3 50%,#ffffff 100%);
+}
+.button {
+  display: inline-block;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  background: #F86B55;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 6px 15px;
+  cursor: pointer;
+  border: none;
+}
+.bgwhite {
+  background-color: #fff;
+}
+
+@import "./page-header";
+@import "./forms";
+@import "./servicies-page";
+@import "./right-bar";
+@import "./blog-page";
+@import "./post-page";
+@import "./vacancies-page";
+@import "./page-footer";
+@media (max-width: 960px) {
+	body {
+		font-size: 14px;
+	}
+}

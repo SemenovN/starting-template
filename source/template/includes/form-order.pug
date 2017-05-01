@@ -1,0 +1,35 @@
+div.form__wrap
+					form(action="#" method="post" class="form")
+						div.form__inner
+							div.form__side--right
+								select(class="turnintodropdown")
+									option Выбирите услугу
+									option Разаработка сайта
+									option Разаработка мобильного приложения
+									option Продвижение в социальных медиа(SMM)
+									option Системная интеграция
+									option Техническая поддержка
+								input(class="form__input" type="text" name="usrname" placeholder="Ваше имя")
+								input(class="form__input" type="tel" name="usrtel" placeholder="Телефон")
+								input(class="form__input" type="email" name="email" placeholder="E-mail")
+								p Бюджет
+								ul.budget__list
+									li.budget__item
+										input(type="radio" id="lose200")
+										label(for="lose200" ) менее 200 тыс.
+									li.budget__item
+										input(type="radio" id="200between700")
+										label(for="200between700" class="budget__item--betweem") от 200 тыс. до 700 тыс.
+									li.budget__item
+										input(type="radio" id="200between700")
+										label(for="200between700" ) от 200 тыс. до 700 тыс.
+									li.budget__item
+										input(type="radio" id="200between700")
+										label(for="200between700" ) от 200 тыс. до 700 тыс.
+							div.form__side--left
+								textarea(class="form__textarea" placeholder="Краткая постоновка задачи")
+								div.file-upload
+									label
+										input(type="file")
+										span Прикрепить файл
+						a(class="button" href="#") Оставить заявку

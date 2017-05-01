@@ -1,0 +1,52 @@
+.vacancies {
+	text-align: center;
+}
+.vacancies__inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.vacancies__item-wrap {
+	@include row-flex();
+	//justify-content: space-between;
+	
+}
+.vacancies__item {
+	text-align: left;
+	@include col();
+	@include col-8();
+	@include col-md-12();
+	@include col-sm-24();
+	padding: 20px 10px;
+}
+
+.vacancies__item-heading {
+  line-height: 28px;
+  color: #F97B68;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.vacancies__item-desc {
+	font-size: 16px;
+  line-height: 18px;
+  color: #3B4555;
+}
+
+.vacancies__email {
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 24px;
+  color: #3B4555;
+  a {
+    font-weight: 500;
+    color: #000000;
+  }
+  a:hover {
+    color: #F97B68;
+  }
+}

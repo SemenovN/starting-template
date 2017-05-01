@@ -1,0 +1,44 @@
+doctype html
+html
+	include ./includes/head.pug
+	body
+		include ./includes/header.pug
+		main.content-page
+			div.divider
+			div.blog
+				h2.section-heading Блог
+				div.blog__wrap
+						div.blog__inner
+							section.blog__content
+								div.post-prev
+									a(href="blog-post.html")
+										img(src="img/58f893b1bf0f7.jpg")
+										div.post-prev__desc
+												a(class='post-prev__head' href='post-detail.html') Android и iOS обошли конкурентов
+												div.post-prev__meta
+													ul.meta__list
+														li.meta__item
+															time( datetime="2017-04-04") 4 апреля 2017
+														li.meta__item Бизнес
+								div.post-prev
+									a(href="blog-post.html")
+											img(src="img/58f893b1bf0f7.jpg")
+									div.post-prev__desc
+											a(class='post-prev__head' href='post-detail.html') Android и iOS обошли конкурентов
+											div.post-prev__meta
+												ul.meta__list
+													li.meta__item
+														time( datetime="2017-04-04") 4 апреля 2017
+													li.meta__item Бизнес
+								div.post-prev
+									a(href="blog-post.html")
+											img(src="img/58f893b1bf0f7.jpg")
+											div.post-prev__desc
+													a(class='post-prev__head' href='post-detail.html') Android и iOS обошли конкурентов
+													div.post-prev__meta
+														ul.meta__list
+															li.meta__item
+																time( datetime="2017-04-04") 4 апреля 2017
+															li.meta__item Бизнес
+							include ./includes/right-bar.pug
+		include ./includes/footer.pug

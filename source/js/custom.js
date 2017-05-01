@@ -1,3 +1,4 @@
-/**
- * Created by Nickolay on 23.07.2016.
- */
+window.onload = function() {
+	tamingselect();
+	svg4everybody();
+}

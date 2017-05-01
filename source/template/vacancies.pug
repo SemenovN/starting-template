@@ -1,0 +1,29 @@
+doctype html
+html
+  include ./includes/head.pug
+  body
+   include ./includes/header.pug
+   main.content-page
+     div.divider
+     section.vacancies
+      h2.section-heading Вакансии
+      div.vacancies__inner
+       div.vacancies__item-wrap
+        div.vacancies__item
+         h3.vacancies__item-heading Backend-разработчик
+         p.vacancies__item-desc Опыт программирования на  Laravel ,Symfony2, Yii2. Ключевые навыки: PHP, MySQL, HTML, Symfony2, Yii2, Laravel
+        div.vacancies__item
+         h3.vacancies__item-heading Fronted-разработчик
+         p.vacancies__item-desc Опыт работы с javascript фреймворком Vue, React, Angular. Ключевые навыки: HTML5, CSS3, javascript, AJAX, Vue, React
+        div.vacancies__item
+         h3.vacancies__item-heading Web-дизайнер
+         p.vacancies__item-desc Опыт работы в студии веб-дизайнером. Ключевые навыки: Adobe Photoshop, Illustrator, Corel Draw, web-дизайн, UI/UX
+        div.vacancies__item
+         h3.vacancies__item-heading iOS Developer
+         p.vacancies__item-desc Опыт программирования на Objective-C; iOS; ООП
+        div.vacancies__item
+         h3.vacancies__item-heading Android Developer
+         p.vacancies__item-desc Опыт программирования на JScript; Android; Android SDK
+      p.vacancies__email Резюме отправлять на e-mail: 
+        a(href='mailto:info@idsi-apps.com') info@idsi-apps.com
+   include ./includes/footer.pug

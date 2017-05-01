@@ -1,0 +1,68 @@
+doctype html
+html
+	include ./includes/head.pug
+	body
+	include ./includes/header.pug
+	main.content-page
+		<!--SERVICES LIST-->
+		div.services-navigation
+			ul.services__list
+				li.services__item
+					a(class="sirvices__link--active" href="dev-mobile-app.html") Разработка мобильных приложений
+				li.services__item
+					a(class="sirvices__link" href="uslugi-sozdanie-websaitov.html") Создание веб-сайтов
+				li.services__item
+					a(class="sirvices__link" href="uslugi-prodvizhenie-mobilnyih-prilozheniy.html") Продвижение мобильных приложений</a>
+		<!--//SERVICES LIST-->
+		<!--PREVIEW SERVICE-->
+		section.services-prev
+			div.services-prev__inner
+				div.prev__media
+					img(src="./img/MacbookWeb.png")
+				div.prev__desc
+					h1.prev__heading Разработка мобильных приложений
+					div.prev__text Любой бизнес стремится к развитию и увеличению прибыли. Разработка и запуск мобильного приложения – это один из важных этапов развития компании, который позволяет систематизировать ведение бизнеса, удержать старых клиентов и привлечь новых. Мы разрабатываем мобильные приложения для Android и iOS на заказ. Готовый продукт становится важной частью бизнеса и бренда, положительно влияет на имидж компании. Задачи решаем под ключ, предлагая каждому удобный вариант сотрудничества.
+					a(class="button" href="#") Заполнить Бриф
+			<!--//PREVIEW SERVICE-->
+			<!--STAGE OF DEVELOPMENT MOBILE APP-->
+			section.stage-project
+				h2.section-heading Этапы 
+					span работ
+				div.stage-project__inner
+					div.stage-project__item
+						div.stage-project__item-mumber 01
+						div.stage-project__desc
+							h3.stage-project__heading Сбор информации
+							p.stage-project___text Мы изучаем ваших конкурентов, учитываем недостатки других приложений, превращая их в достоинства. Ваши идеи и пожелания обретают форму в детальном описании продукта. Рекомендуем заказывать разработку приложений сразу для Android и iOS, так вы охватите 95% пользователей мобильных устройств.
+					div.stage-project__item
+						div.stage-project__item-mumber 02
+						div.stage-project__desc
+							h3.stage-project__heading UX/UI дизайн
+							p.stage-project___text Приложение должно быть не только красивым, но и удобным и понятным в использовании.
+					div.stage-project__item
+						div.stage-project__item-mumber 03
+						div.stage-project__desc
+							h3.stage-project__heading Разработка
+							p.stage-project___text Мы отдаём предпочтение нативной разработке. Она позволяет создавать стабильный продукт и уменьшает бюджет проекта, при этом возможности устройств задействованы на 100%.
+					div.stage-project__item
+						div.stage-project__item-mumber 04
+						div.stage-project__desc
+							h3.stage-project__heading Тестирование
+							p.stage-project___text Важное место в разработке мобильных приложений занимает тестирование. Проверка работы приложения на различных версиях ОС и экранах позволяет решить готово ли оно к запуску.
+					div.stage-project__item
+						div.stage-project__item-mumber 05
+						div.stage-project__desc
+							h3.stage-project__heading Запуск приложения
+							p.stage-project___text Мы загружаем приложение в Google Play и App Store, создаём продающую страницу в магазинах и выполняем поисковую оптимизацию. Это поможет продукту найти своего пользователя.
+			<!--//STAGE OF DEVELOPMENT MOBILE APP-->
+			<!--FORMA FOR ODER DEVELOPMENT MOBILE APP-->
+			section.form-order
+				h2.section-heading Оценка разработки  
+					span мобильного приложения
+				div.form-order__info
+					p Для расчёта примерной стоимости разработки, нужна подробная информация о проекте.
+					p Оставьте заявку на оценку приложения, и мы свяжемся с вами в течение 1 рабочего дня.
+				include ./includes/form-order.pug
+			<!--//FORMA FOR ODER DEVELOPMENT MOBILE APP-->
+		
+	include ./includes/footer.pug

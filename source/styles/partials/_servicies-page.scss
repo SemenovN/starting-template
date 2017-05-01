@@ -1,0 +1,185 @@
+/* services-navigation style begin */
+.services-navigation {
+    width: 100%;
+    background-color: black;
+    padding: 6px 0;
+}
+
+.services__list {
+    text-align: center;
+    margin: 0;
+}
+
+.services__item {
+    list-style-type: none;
+    line-height: 38px;
+    text-align: left;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.sirvices__link {
+    color: white;
+}
+
+.sirvices__link--active,
+.sirvices__link:hover {
+    color: #F86B55;
+}  
+/* services-navigation style end */
+
+/* SERVICIES PREVIEW BEGIN */
+.services-prev {
+    background-color: #f5f5f7;
+    //background-image: url(../img/MacbookWeb.png);
+    //background-repeat: no-repeat;
+    //background-position: left center;
+    //background-size: 900px 350px;
+    //min-height: 450px;
+}
+
+.services-prev__inner {
+	@include row-flex();
+	justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    @include screen320 {
+        padding: 20px 0;
+    }
+}
+.services-prev__inner--bg {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+}
+
+.prev__desc--bg {
+    margin-left: 50%;
+    margin-top: 20px;
+}
+.prev__media {
+    @include col();
+		@include col-10();
+		@include col-md-24();
+    img {
+        width: 100%;
+    }
+}
+.prev__desc {
+		@include col();
+		@include col-14();
+		@include col-md-24();
+    text-align: left;
+    padding: 0 10px;
+}
+
+.prev__heading {
+    color: #F86B55;
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 30px;
+    //padding-bottom: 30px;
+    font-weight: 500;
+    @include phones {
+    	font-size: 22px;
+    	line-height: 32px;
+    }
+    @include screen320 {
+    	font-size: 18px;
+    	line-height: 26px;
+    }
+}
+.prev__text {
+    color: #3B4555;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    //padding-bottom: 30px;
+
+    @include phones {
+    	font-size: 14px;
+    	line-height: 24px;
+    }
+    @include screen320 {
+    	font-size: 12px;
+    	line-height: 22px;
+    }
+}
+/* SERVICIES PREVIEW END */
+
+/*STAGE OF PROJECT BEGIN */
+
+.stage-project {
+    text-align: center;
+}
+
+.stage-project__inner {
+	@include row-flex();
+  max-width: 1200px;
+  margin: 0 auto 160px;
+  padding: 40px 0;
+  @include phones {
+  	padding: 24px 0 0;
+  }
+  @include screen320 {
+  	padding: 24px 0 0;
+  }
+}
+
+.stage-project__item {
+  @include col();
+	@include col-12();
+	@include col-sm-24();
+  display: flex;
+}
+
+.stage-project__item-mumber {
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    color: #F86B55;
+    line-height: 44px;
+    @include screen320 {
+    	font-size: 24px;
+    }
+}
+
+.stage-project__desc {
+    float: left;
+    padding-left: 28px;
+    padding-right: 5px;
+    width: 80%;
+    text-align: left;
+    @include screen320 {
+    	padding-left: 12px;
+    }
+}
+
+.stage-project__heading {
+    flex-direction: row;
+    width: 100%;
+    color: #3B4555;
+    line-height: 44px;
+    font-weight: 500;
+    font-size: 20px;
+    @include screen320 {
+    	font-size: 18px;
+    }
+}
+
+.stage-project___text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    @include phones {
+    	font-size: 14px;
+    }
+    @include screen320 {
+    	font-size: 12px;
+    }
+}
+/*STAGE OF PROJECT END */
